@@ -1,2 +1,158 @@
+/* палітра */
+/* main text color #212121 */
+/* second text color #757575 */
+/* focus text color #2196F3 */
+/* second background-color #F5F4FA */
+:root {
+  --headlines-color: #212121;
+  --second-text-color: #757575;
+  --bg-color-main: #f5f4fa;
+  --bg-color-second: #e5e5e5;
+  --focus-color: #2196f3;
+}
+
 body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+
+  background-color: var(--bg-color-main);
+  color: var(--second-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* LOGO */
+.logo,
+.logo-blue {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: #000000;
+}
+.logo-blue {
+  color: var(--focus-color);
+}
+/* NAVIGATION */
+.site-nav .link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--headlines-color);
+}
+
+.auth-nav .link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--second-text-color);
+}
+.auth-nav .link:hover,
+.auh-nav .link:focus,
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--focus-color);
+}
+/* HERO */
+.hero-headlines {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/* Button */
+.button {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--focus-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Section headlines */
+.section-headlines,
+.examples-headlines {
+  color: var(--headlines-color);
+}
+/* specifics */
+.specifics {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+/* Чем мы занимаемся */
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Наша команда */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.team-spec {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* FOOTER */
+.contacts .location.link {
+  color: #ffffff;
+}
+.contacts .link {
+  color: var(--second-text-color);
+}
+
+/* CSS PORTFOLIO */
+.filter-button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background-color: var(--bg-color-main);
+  color: var(--headlines-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--focus-color);
+  color: #ffffff;
+}
+
+.examples h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.examples .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
