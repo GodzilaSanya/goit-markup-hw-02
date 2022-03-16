@@ -6,9 +6,11 @@
 :root {
   --headlines-color: #212121;
   --second-text-color: #757575;
-  --bg-color-main: #f5f4fa;
+  --bg-color-section: #f5f4fa;
+  --bg-color-main: #ffffff;
   --bg-color-second: #e5e5e5;
   --focus-color: #2196f3;
+  --footer-hero-color: #2f303a;
 }
 
 body {
@@ -25,6 +27,14 @@ body {
 }
 .link {
   text-decoration: none;
+}
+/* current page */
+.site-nav .link.current {
+  color: var(--focus-color);
+}
+/* current button */
+.filter-button.current-btn {
+  background-color: var(--focus-color);
 }
 /* LOGO */
 .logo,
@@ -60,7 +70,7 @@ body {
   color: var(--second-text-color);
 }
 .auth-nav .link:hover,
-.auh-nav .link:focus,
+.auth-nav .link:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
 /* footer hover */
@@ -81,6 +91,7 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
+  background-color: var(--footer-hero-color);
 }
 /* Button */
 .button {
@@ -116,17 +127,25 @@ h2 {
   text-align: center;
 }
 /* Наша команда */
+.team {
+  background-color: var(--bg-color-section);
+}
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
 }
 .team-spec {
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
 }
 
 /* FOOTER */
+.footer {
+  background-color: var(--footer-hero-color);
+}
 .contacts .location.link {
   color: #ffffff;
 }
